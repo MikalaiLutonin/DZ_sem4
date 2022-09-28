@@ -19,6 +19,38 @@
 
 
 
+// ======= Решение задачи 25 через цикл
+Console.Clear();
+Console.Write("Введи число А:");
+int A = int.Parse(Console.ReadLine()!);
+Console.Write("Введи число B:");
+int B = int.Parse(Console.ReadLine()!);
+Console.WriteLine($"Число {A} в степени {B} равно {GetStepen(A, B)}");
+
+
+int GetStepen(int number, int stepen)
+{
+    int vozvedenie = number;
+    for (int i = 1; i < stepen; i++)
+    {
+        vozvedenie = vozvedenie * number;
+          }
+    return vozvedenie;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //========= Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
@@ -70,26 +102,26 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-Console.Clear();
-array_8();
+// Console.Clear();
+// array_8();
 
 
-void array_8()
-{
-    int[] array = new int[8];          //объявили пустой массив из 8 элементов
+// void array_8()
+// {
+//     int[] array = new int[8];          //объявили пустой массив из 8 элементов
 
-    for (int i = 0; i < 8; i++)        //заполнем массив рандомныими числами
-    {
-        array[i] = new Random().Next(0, 100);
-    }
+//     for (int i = 0; i < 8; i++)        //заполнем массив рандомныими числами
+//     {
+//         array[i] = new Random().Next(0, 100);
+//     }
 
 
-    Console.Write($"Рандомный массив из 8 элементов: ");
+//     Console.Write($"Рандомный массив из 8 элементов: ");
 
-    for (int i = 0; i < 8; i++)        //вывод массива на экран
-    {
-        Console.Write($" {array[i]}");
-    }
+//     for (int i = 0; i < 8; i++)        //вывод массива на экран
+//     {
+//         Console.Write($" {array[i]}");
+//     }
 
-}
+// }
 
