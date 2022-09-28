@@ -26,41 +26,41 @@
 // 82 -> 10
 // 9012 -> 12
 
-Console.Clear();
-Console.Write("Введите число: ");
-int N = int.Parse(Console.ReadLine()!);
-int s4etchik = 1;
-int sum = 0;
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int N = int.Parse(Console.ReadLine()!);
+// int s4etchik = 1;
+// int sum = 0;
 
-Console.WriteLine($"Сумма цифр этого числа равна {Summa(N)}");
-
-
-int Summa(int number)
-{
-for (int i = 10; N / i != 0; i = i * 10)   //определяем количество цифр в числе
-{
-    s4etchik = s4etchik + 1;
-}
-// Console.WriteLine(s4etchik);
-
-int[] array = new int[s4etchik];           //создали пустой массив из подсчитанного количества цифр
+// Console.WriteLine($"Сумма цифр этого числа равна {Summa(N)}");
 
 
-for (int i = 0; i < s4etchik; i++)        //заполняем пустой массив цифрами введенного числа
-{
-    array[i] = N % 10;
-    // Console.WriteLine(array[i]);
-    N = N / 10;
-}
+// int Summa(int number)
+// {
+// for (int i = 10; N / i != 0; i = i * 10)   //определяем количество цифр в числе
+// {
+//     s4etchik = s4etchik + 1;
+// }
+// // Console.WriteLine(s4etchik);
 
-for (int i = 0; i < array.Length; i++)         //считаем сумму элементов массива
-{
-    sum = sum + array[i];
-    }
-// Console.Write(sum);
+// int[] array = new int[s4etchik];           //создали пустой массив из подсчитанного количества цифр
 
-return sum;
-}
+
+// for (int i = 0; i < s4etchik; i++)        //заполняем пустой массив цифрами введенного числа
+// {
+//     array[i] = N % 10;
+//     // Console.WriteLine(array[i]);
+//     N = N / 10;
+// }
+
+// for (int i = 0; i < array.Length; i++)         //считаем сумму элементов массива
+// {
+//     sum = sum + array[i];
+//     }
+// // Console.Write(sum);
+
+// return sum;
+// }
 
 
 
@@ -70,26 +70,26 @@ return sum;
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-// Console.Clear();
-// array_8();
+Console.Clear();
+array_8();
 
 
-// void array_8()
-// {
-//     int[] array = new int[8];          //объявили пустой массив из 8 элементов
+void array_8()
+{
+    int[] array = new int[8];          //объявили пустой массив из 8 элементов
 
-//     for (int i = 0; i < 8; i++)        //заполнем массив рандомныими числами
-//     {
-//         array[i] = new Random().Next(0, 100);
-//     }
+    for (int i = 0; i < 8; i++)        //заполнем массив рандомныими числами
+    {
+        array[i] = new Random().Next(0, 100);
+    }
 
 
-//     Console.Write($"Рандомный массив из 8 элементов: ");
+    Console.Write($"Рандомный массив из 8 элементов: ");
 
-//     for (int i = 0; i < 8; i++)        //вывод массива на экран
-//     {
-//         Console.Write($" {array[i]}");
-//     }
+    for (int i = 0; i < 8; i++)        //вывод массива на экран
+    {
+        Console.Write($" {array[i]}");
+    }
 
-// }
+}
 
