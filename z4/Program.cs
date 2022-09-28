@@ -2,20 +2,20 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-Console.Clear();
-Console.Write("Введи число А:");
-int A = int.Parse(Console.ReadLine()!);
-Console.Write("Введи число B:");
-int B = int.Parse(Console.ReadLine()!);
+// Console.Clear();
+// Console.Write("Введи число А:");
+// int A = int.Parse(Console.ReadLine()!);
+// Console.Write("Введи число B:");
+// int B = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine($"Число {A} в степени {B} равно {GetStepen(A, B)}");
+// Console.WriteLine($"Число {A} в степени {B} равно {GetStepen(A, B)}");
 
 
-int GetStepen(int number, int stepen)
-{
-int vozvedenie = Convert.ToInt32(Math.Pow(number, stepen));
-    return vozvedenie;
-}
+// int GetStepen(int number, int stepen)
+// {
+// int vozvedenie = Convert.ToInt32(Math.Pow(number, stepen));
+//     return vozvedenie;
+// }
 
 
 
@@ -26,41 +26,41 @@ int vozvedenie = Convert.ToInt32(Math.Pow(number, stepen));
 // 82 -> 10
 // 9012 -> 12
 
-// Console.Clear();
-// Console.Write("Введите число: ");
-// int N = int.Parse(Console.ReadLine()!);
-// int s4etchik = 1;
-// int sum = 0;
+Console.Clear();
+Console.Write("Введите число: ");
+int N = int.Parse(Console.ReadLine()!);
+int s4etchik = 1;
+int sum = 0;
 
-// Console.WriteLine($"Сумма цифр этого числа равна {Summa(N)}");
-
-
-// int Summa(int number)
-// {
-// for (int i = 10; N / i != 0; i = i * 10)   //определяем количество цифр в числе
-// {
-//     s4etchik = s4etchik + 1;
-// }
-// // Console.WriteLine(s4etchik);
-
-// int[] array = new int[s4etchik];           //создали пустой массив из подсчитанного количества цифр
+Console.WriteLine($"Сумма цифр этого числа равна {Summa(N)}");
 
 
-// for (int i = 0; i < s4etchik; i++)        //заполняем пустой массив цифрами введенного числа
-// {
-//     array[i] = N % 10;
-//     // Console.WriteLine(array[i]);
-//     N = N / 10;
-// }
+int Summa(int number)
+{
+for (int i = 10; N / i != 0; i = i * 10)   //определяем количество цифр в числе
+{
+    s4etchik = s4etchik + 1;
+}
+// Console.WriteLine(s4etchik);
 
-// for (int i = 0; i < array.Length; i++)         //считаем сумму элементов массива
-// {
-//     sum = sum + array[i];
-//     }
-// // Console.Write(sum);
+int[] array = new int[s4etchik];           //создали пустой массив из подсчитанного количества цифр
 
-// return sum;
-// }
+
+for (int i = 0; i < s4etchik; i++)        //заполняем пустой массив цифрами введенного числа
+{
+    array[i] = N % 10;
+    // Console.WriteLine(array[i]);
+    N = N / 10;
+}
+
+for (int i = 0; i < array.Length; i++)         //считаем сумму элементов массива
+{
+    sum = sum + array[i];
+    }
+// Console.Write(sum);
+
+return sum;
+}
 
 
 
